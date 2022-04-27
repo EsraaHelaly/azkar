@@ -15,7 +15,8 @@ class BuildSectionItem extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-            builder: ((context) => SectionDetails(id: sectionModel.id!))));
+            builder: ((context) => SectionDetailsScreen(
+                id: sectionModel.id!, sectionName: sectionModel.name!))));
       },
       child: Container(
         decoration: BoxDecoration(

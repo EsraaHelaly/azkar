@@ -59,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
         SectionModel _sectionModel = SectionModel.fromJson(section);
         sections.add(_sectionModel);
       });
+      setState(() {});
     }).catchError((error) {
       // print(error);
     });
