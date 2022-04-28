@@ -58,7 +58,7 @@ class _SectionDetailsScreenState extends State<SectionDetailsScreen> {
                 if (_counter != 0) {
                   _counter--;
                 }
-                if (_counter == 0) {
+                if (_counter <= 0) {
                   sectionDetails.removeAt(index);
                   setState(() {});
                 }

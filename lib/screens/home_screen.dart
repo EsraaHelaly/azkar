@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:azkar/models/section_model.dart';
+import 'package:azkar/screens/sebha_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -33,6 +34,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         centerTitle: true,
         backgroundColor: Colors.purple,
+        actions: [
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: ((context) => (const SebhaScreen()))));
+            },
+            child: const Icon(Icons.countertops),
+          )
+        ],
       ),
       body: Padding(
         padding: EdgeInsets.all(8.0.h),
